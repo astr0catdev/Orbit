@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url('https://coffee-arcade.neocities.org/background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.frosted {
+  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.35);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-bar-wrapper,
+.iframe-top-bar {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  z-index: 10000;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  gap: 16px;
+}
+
+.top-bar-wrapper,
+.iframe-top-bar {
+  display: none;
+}
+
+.top-icons,
+.iframe-icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-icons img,
+.iframe-icons img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s, opacity 0.2s;
+  opacity: 0.9;
+}
+
+.top-icons img:hover,
+.iframe-icons img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.status {
+  margin-top: 160px;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  padding: 10px 16px;
+  width: 360px;
+  max-width: 90%;
+  margin: 10px auto 0;
+  gap: 10px;
+}
+
+.search-container input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+}
+
+.search-container.frosted {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.search-container img {
+  width: 30px;
+}
+
+.search-container button {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+.search-container button:hover {
+  transform: scale(1.05);
+}
+
+.ping {
+  margin: 18px auto 10px;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 6px 20px;
+  display: inline-block;
+}
+
+.ping.frosted {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.green {
+  color: #00ff00;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.socials .frosted {
+  padding: 10px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials img {
+  width: 44px;
+  cursor: pointer;
+  filter: invert;
+  transition: transform 0.2s;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
+}
+
+#iframeContainer,
+#panelIframeContainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background: black;
+}
+
+#iframeContainer iframe,
+#panelIframeContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#urlBar {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  outline: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  width: 300px;
+  color: white;
+  font-size: 14px;
+}
+
+#urlBar::placeholder {
+  color: #ccc;
+}
+
+.settings-panel {
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-y: auto;
+  padding: 40px 16px;
+  z-index: 9999;
+}
+
+.settings-panel .frosted {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(40px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 24px;
+  padding: 24px;
+  max-width: 720px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.settings-panel h1 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.settings-panel h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 20px;
+}
+
+.settings-panel p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 12px;
+}
+
+.settings-panel label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.settings-panel input[type="text"] {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 10px 14px;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.settings-panel button {
+  background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.settings-panel button:hover {
+  background: linear-gradient(145deg, #2c2c2c, #1a1a1a);
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.image-box {
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.image-box:hover {
+  transform: scale(1.05);
+}
+
+.image-box img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+#iframeContainer {
+  position: relative;
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+
+#iframeContainer.fade-out {
+  opacity: 0;
+}
+
+#iframeContainer.fade-in {
+  opacity: 1;
+}
