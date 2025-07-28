@@ -4,13 +4,13 @@
 
 ## 🚀 features:
 - 🎮 cloud gaming service  
-- 🎬 movie & tv streaming  
-- 🖥️ vm environments  
+- 🎬 movie & tv streaming platform
+- 🖥️ chromium vm  
 - 🔒 proxy powered by uv & scramjet  
-- 🕵️‍♂️ cloaking & disguise settings  
+- 🕵️‍♂️ cloaking & more settings
 - 🎨 personalization & themes  
-- 🔑 sign-in + welcome experience  
+- 🔑 sign-in + welcome experience 
 
 ## 🌍 get started:
-👉 try it now: [http://clever.nekoweb.org](http://clever.nekoweb.org)  
+👉 try it now: [http://clever.nekoweb.org](http://clever.nekoweb.org) (we're getting a domain soon)
 💬 join the community: [https://discord.gg/Awghy4ga]([)
