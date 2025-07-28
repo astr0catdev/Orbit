@@ -13,4 +13,4 @@
 
 ## 🌍 get started:
 👉 try it now: [http://clever.nekoweb.org](http://clever.nekoweb.org)  
-💬 join the community: [https://discord.gg/Awghy4ga]([))
+💬 join the community: [https://discord.gg/Awghy4ga]([)
