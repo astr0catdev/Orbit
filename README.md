@@ -11,5 +11,6 @@ Our features:
 > 🗽 Fresh content & features **every month/week**.  
 
 > **Try Comet now:**  
-> 🌐 Official Site — https://cometapp.pages.dev 
+> 🌐 Official Site — https://cometapp.pages.dev
+> 
 > 💬 Community Server— https://discord.gg/d5MCcxdf
