@@ -1,17 +1,15 @@
-# 🪐 orbit
+# ☄️ Comet, an open-source site with games, apps, a streaming service, and more.
 
-**orbit** is your all-in-one platform for cloud gaming, movie streaming, virtual machines, and secure browsing — all optimized for school, travel, and speed.
+Our features:
+> 🎮 Dive into **Cloud Gaming** with zero installs.  
+> 🍿 Stream **Movies & TV** anytime, anywhere.  
+> 🛠️ Access powerful **Web Apps** on the fly.  
 
-## 🚀 features:
-- 🎮 cloud gaming service  
-- 🎬 movie & tv streaming platform
-- 🖥️ chromium vm  
-- 🔒 proxy powered by uv & scramjet  
-- 🕵️‍♂️ cloaking & more settings
-- 🎨 personalization & themes  
-- 🔑 sign-in + welcome experience 
+> 🖥️ Boot up a **Private Chromium VM**.  
+> 🚀 Browse freely with **UV Static + CORS Proxy**.  
+> 🪄 Fully **personalized experience**.  
+> 🗽 Fresh content & features **every month/week**.  
 
-## 🌍 get started:
-👉 try it now: [http://orbit.nekoweb.org](http://orbit.nekoweb.org) (we're getting a domain soon)
-
-💬 join the community: [https://discord.gg/Awghy4ga]([)
+> **Try Comet now:**  
+> 🌐 Official Site — https://cometapp.pages.dev 
+> 💬 Community Server— https://discord.gg/d5MCcxdf
