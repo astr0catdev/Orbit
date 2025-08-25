@@ -1,16 +1,17 @@
-# ☄️ Comet, an open-source site with games, apps, a streaming service, and more.
+## ☄️ **Comet**— a blazing fast web proxy.
 
-Our features:
-> 🎮 Dive into **Cloud Gaming** with zero installs.  
-> 🍿 Stream **Movies & TV** anytime, anywhere.  
-> 🛠️ Access powerful **Web Apps** on the fly.  
 
-> 🖥️ Boot up a **Private Chromium VM**.  
-> 🚀 Browse freely with **UV Static + CORS Proxy**.  
-> 🪄 Fully **personalized experience**.  
-> 🗽 Fresh content & features **every month/week**.  
+ **What we have to offer**
+ 🎮 Play ***1200+ games*** in your browser.
+ 🍿 Stream **Movies & TV** anytime, anywhere.  
+ 🛠️ Use powerful web apps — **no installs needed**.  
+ 
+ 🖥️ Launch a **Private Chromium VM**.  
+ 🚀 Browse freely with a **static proxy**.  
+ ✨ Enjoy a ***personalized greeting*** with your name.
+ ✨ Upcoming **account hosting** support  
+🗽 A **private** AI *chatbot* with pre-written **suggestions**.
 
-> **Try Comet now:**  
-> 🌐 Official Site — https://cometapp.pages.dev
-> 
-> 💬 Community Server— https://discord.gg/d5MCcxdf
+ **Start exploring:**  
+🌐 Try [**Comet**](https://cometapp.pages.dev) today. (**WIP - Work In Progress**)
+💬 Join our [**Discord Server**](https://discord.gg/s3ezBy4MTC)
